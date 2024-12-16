@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>Quiz Results</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f4ff;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
+            background-image: linear-gradient(to bottom right, #e6f2ff, #b3d9ff);
+            min-height: 100vh;
+        }
+
+        h1 {
+            color: #FF4500;
+            font-size: 2.5em;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+            margin-bottom: 20px;
+        }
+
+        .score {
+            font-size: 2em;
+            color: #1E90FF;
+            margin: 20px 0;
+            font-weight: bold;
+        }
+
+        a {
+            background-color: #FF4500;
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 25px;
+            transition: background-color 0.3s ease;
+            font-weight: bold;
+            margin: 10px 0;
+            display: inline-block;
+        }
+
+        a:hover {
+            background-color: #FF6347;
+        }
+
+        p {
+            color: #1E90FF;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+	<h1>Final Results</h1>
+
+    <div class="score"><%- score %>/10</div><br><br>
+
+    <a href="/">End Quiz</a><br><br>
+
+    <p>Player: <%- name %></p>
+    <p>Starter: <%- starter %></p>
+</body>
+</html>

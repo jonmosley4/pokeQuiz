@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>Info</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f4ff;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
+            background-image: linear-gradient(to bottom right, #e6f2ff, #b3d9ff);
+            min-height: 100vh;
+        }
+
+        h1 {
+            color: #FF4500;
+            font-size: 2.5em;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+            margin-bottom: 20px;
+        }
+
+        input[type="text"], select {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 2px solid #1E90FF;
+            border-radius: 10px;
+            box-sizing: border-box;
+            font-size: 1em;
+        }
+
+        input[type="submit"] {
+            background-color: #FF4500;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #FF6347;
+        }
+
+        label {
+            color: #1E90FF;
+            font-weight: bold;
+            display: block;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+	<h1>Enter Information</h1>
+
+    <form action="/confirm" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required><br>
+
+        <label for="starter">Starter Pokemon:</label>
+        <select id="starter" name="starter">
+            <option>Bulbasaur</option>
+            <option>Squirtle</option>
+            <option>Charmander</option>
+        </select><br>
+
+        <input type="submit" value="Confirm">
+    </form>
+</body>
+</html>
